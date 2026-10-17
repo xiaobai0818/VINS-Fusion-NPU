@@ -1,0 +1,6 @@
+<launch>
+	<!-- Node name vins_fusion keeps topics at /vins_fusion/... -->
+	<node name="vins_fusion" pkg="vins_npu" type="vins_npu_node" output="screen"
+	      args="$(find vins_npu)/config/fast_drone_250.yaml"
+	      launch-prefix="env LD_LIBRARY_PATH=$(find vins_npu)/third_party/rknn/lib:$(optenv LD_LIBRARY_PATH)"/>
+</launch>

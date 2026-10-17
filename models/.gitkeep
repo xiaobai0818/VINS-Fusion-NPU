@@ -1,0 +1,2 @@
+# Place superpoint_640x480.rknn here after converting on an x86 PC.
+# See convert_superpoint_rknn.py and ../README.md
